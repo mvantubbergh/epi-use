@@ -1,0 +1,55 @@
+<h1>Employee Schedules</h1>
+<h2>{{curEmployee}}</h2>
+
+
+<mat-card>
+  <mat-card (click)="scheduleClicked(e)" (click)="setIndex(i)" *ngFor="let e of schedules; let i = index" id="schedule">  <mat-card-content>
+    <mat-card-header> {{e.title}} </mat-card-header>
+    <p>{{e.description}}</p>
+    <p>{{e.start_time}} - {{e.end_time}}</p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button (click)="editSchedule(e)">Edit</button>
+    <button mat-button (click)="deleteSchedule(e)"=>Delete</button>
+  </mat-card-actions>
+</mat-card>
+
+<!-- <button type="submit" mat-raised-button id="mainMenuButton">Main Menu</button> -->
+
+
+<!-- 
+<mat-card>
+    <mat-card-title>Morning Workout</mat-card-title>
+    <mat-card-content>
+      <p>2022 / 08 / 19</p>
+      <p>09:00</p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button>Edit</button>
+      <button mat-button>Delete</button>
+    </mat-card-actions>
+</mat-card>
+
+<mat-card>
+    <mat-card-title>Check Rare Fish Investments</mat-card-title>
+    <mat-card-content>
+      <p>2022 / 08 / 19</p>
+      <p>11:00</p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button>Edit</button>
+      <button mat-button>Delete</button>
+    </mat-card-actions>
+</mat-card> 
+
+<mat-card>
+    <mat-card-title>Nap Time</mat-card-title>
+    <mat-card-content>
+      <p>2022 / 08 / 19</p>
+      <p>13:00</p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button>Edit</button>
+      <button mat-button>Delete</button>
+    </mat-card-actions>
+</mat-card> -->

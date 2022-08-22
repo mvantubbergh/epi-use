@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "schedule-manager-6df88": {
+      "hosting": {
+        "schedule-management": [
+          "schedule-manager-6df88"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "schedule-manager-6df88"
+  }
+}

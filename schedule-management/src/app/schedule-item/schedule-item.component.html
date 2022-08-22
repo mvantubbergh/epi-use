@@ -1,0 +1,23 @@
+<h1>{{id}}</h1>
+
+<mat-card>
+    <mat-card>  
+        <mat-card-content>
+            <mat-card-header> 
+                Title: 
+                <input type="text" placeholder="{{curSched.title}}" [(ngModel)]="title"> 
+            </mat-card-header>
+            <p> Desription: </p>
+                <input type="text" placeholder="{{curSched.description}}" [(ngModel)]="description">
+            <p> Start Time </p>
+                <input type="text" placeholder="{{curSched.start_time}}" [(ngModel)]="start">
+            <p> Start Time </p>
+                <input type="text" placeholder="{{curSched.end_time}}" [(ngModel)]="end">
+        </mat-card-content>
+
+        <mat-card-actions>
+            <button mat-button (click)="saveEdit(curSched.id)">Save Changes</button>
+            <!-- <button mat-button (click)="deleteItem(curSched.id)"=>Delete</button> -->
+        </mat-card-actions>
+        
+</mat-card>

@@ -1,0 +1,31 @@
+<h1>Responsible Employees</h1>
+<h2>ID: {{userID}}</h2>
+
+
+<!-- <mat-card (click)="employeeClicked(e)" (click)="setIndex(i)" *ngFor="let e of employees; let i = index" id="employee">
+  <mat-card-title>{{e.username}}</mat-card-title>
+  <mat-card-subtitle>{{e.id}}</mat-card-subtitle>
+  <mat-card-content>
+    <p>{{e.title}}</p>
+    <p>{{e.reports_to}}</p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button (click)="viewEmployee(e)">View Schedule</button>
+  </mat-card-actions>
+</mat-card> -->
+
+<mat-tree [dataSource]="dataSource" [treeControl]="treeControl">
+  <mat-tree-node *matTreeNodeDef="let node" matTreeNodePadding>
+    <button mat-icon-button disabled></button>
+    {{node.title}} - {{node.id}}
+  </mat-tree-node>
+  <mat-tree-node *matTreeNodeDef="let node;when: hasChild" matTreeNodePadding>
+    <button mat-icon-button matTreeNodeToggle
+            [attr.aria-label]="'Toggle ' + node.name">
+        <mat-icon class="mat-icon-rtl-mirror">
+        {{treeControl.isExpanded(node) ? 'expand_more' : 'chevron_right'}}
+      </mat-icon>
+    </button>
+    {{node.title}}
+  </mat-tree-node>
+</mat-tree>
