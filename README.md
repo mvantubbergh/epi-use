@@ -22,11 +22,12 @@ Schedule Management System for Epi-Use Technical Interview
 ![image](https://user-images.githubusercontent.com/19359163/185966877-54cbd2fa-bb80-4bc9-b6c3-5b5e4e70161a.png)
 
 # Main Menu Page
-The ID of the employee is stored on localstorage to be able to use this with all future operations
+The ID of the employee is stored on localstorage to be able to use this with all future operations.
 ![image](https://user-images.githubusercontent.com/19359163/185966962-0dd3360e-478b-4693-9199-91d04655b2d4.png)
 
 # Responsible Emplyees (Hierarchy) Page
 Unfortunately this is not fully functional. An employee can only view themselves in this hierarchy and not all employees underneath them. I did write code to accomplish this but was not able to sort out all the issues I faced in time.
+
 ![image](https://user-images.githubusercontent.com/19359163/185967132-88198fbb-0378-4041-ac53-0a9fbcde3f06.png)
 
 # View Schedules
